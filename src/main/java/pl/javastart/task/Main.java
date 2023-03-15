@@ -5,6 +5,8 @@ public class Main {
     public static void main(String[] args) {
         ArrayUtils arrayUtils = new ArrayUtils();
         double[] array = arrayUtils.createArray();
-        arrayUtils.calculateSum(array);
+        double sum = arrayUtils.calculateSum(array);
+
+        System.out.printf("Suma kwadratów wprowadzonych liczb to %.0f", sum);
     }
 }

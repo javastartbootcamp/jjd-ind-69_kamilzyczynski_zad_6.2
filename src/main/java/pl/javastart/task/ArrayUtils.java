@@ -3,9 +3,8 @@ package pl.javastart.task;
 import java.util.Scanner;
 
 public class ArrayUtils {
-    Scanner scanner = new Scanner(System.in);
-
     double[] createArray() {
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Podaj rozmiar tablicy: ");
         int number = scanner.nextInt();
         double[] array = new double[number];
@@ -16,11 +15,11 @@ public class ArrayUtils {
         return array;
     }
 
-    void calculateSum(double[] array) {
+    double calculateSum(double[] array) {
         double sum = 0;
         for (double v : array) {
             sum += Math.pow(v, 2);
         }
-        System.out.printf("Suma kwadratów wprowadzonych liczb to %.0f", sum);
+        return sum;
     }
 }
